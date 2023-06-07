@@ -11,7 +11,9 @@ import SwiftData
 @Model
 class JournalEntry {
     let date: Date = Date();
+    // @Attribute(.unique) var id: String;
     var content: String = "";
+    
     
     init(content: String) {
         self.content = content;

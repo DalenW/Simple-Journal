@@ -14,6 +14,7 @@
 		D1198B512A303591008D5E07 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1198B502A303591008D5E07 /* JournalEntry.swift */; };
 		D1198B5C2A303C51008D5E07 /* AppTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1198B5B2A303C51008D5E07 /* AppTabScreen.swift */; };
 		D1198B5E2A303FC8008D5E07 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1198B5D2A303FC8008D5E07 /* AppTabView.swift */; };
+		D1198B612A3042B5008D5E07 /* CreateEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1198B602A3042B5008D5E07 /* CreateEntryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		D1198B502A303591008D5E07 /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
 		D1198B5B2A303C51008D5E07 /* AppTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabScreen.swift; sourceTree = "<group>"; };
 		D1198B5D2A303FC8008D5E07 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
+		D1198B602A3042B5008D5E07 /* CreateEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEntryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				D1198B3C2A303362008D5E07 /* Simple_JournalApp.swift */,
 				D1198B402A303362008D5E07 /* ContentView.swift */,
 				D1198B582A303BD1008D5E07 /* Navigation */,
+				D1198B5F2A304279008D5E07 /* CreateEntry */,
 			);
 			path = Multiplatform;
 			sourceTree = "<group>";
@@ -94,6 +97,14 @@
 				D1198B5D2A303FC8008D5E07 /* AppTabView.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		D1198B5F2A304279008D5E07 /* CreateEntry */ = {
+			isa = PBXGroup;
+			children = (
+				D1198B602A3042B5008D5E07 /* CreateEntryView.swift */,
+			);
+			path = CreateEntry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 				D1198B512A303591008D5E07 /* JournalEntry.swift in Sources */,
 				D1198B5C2A303C51008D5E07 /* AppTabScreen.swift in Sources */,
 				D1198B412A303362008D5E07 /* ContentView.swift in Sources */,
+				D1198B612A3042B5008D5E07 /* CreateEntryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

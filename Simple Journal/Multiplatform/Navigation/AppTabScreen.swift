@@ -42,7 +42,7 @@ extension AppTabScreen {
         case .entries:
             Label("Entries", systemImage: "list")
         case .create:
-            Label("Create", systemImage: "plus")
+            CreateEntryView()
         case .content:
             Label("Content", systemImage: "leaf")
         case .account:
