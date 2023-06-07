@@ -40,7 +40,7 @@ extension AppTabScreen {
         case .home:
             Label("Home", systemImage: "home")
         case .entries:
-            Label("Entries", systemImage: "list")
+             ListEntriesView().modelContainer(for: JournalEntry.self, inMemory: false)
         case .create:
             CreateEntryView()
         case .content:

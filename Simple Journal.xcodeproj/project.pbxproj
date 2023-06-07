@@ -15,6 +15,7 @@
 		D1198B5C2A303C51008D5E07 /* AppTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1198B5B2A303C51008D5E07 /* AppTabScreen.swift */; };
 		D1198B5E2A303FC8008D5E07 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1198B5D2A303FC8008D5E07 /* AppTabView.swift */; };
 		D1198B612A3042B5008D5E07 /* CreateEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1198B602A3042B5008D5E07 /* CreateEntryView.swift */; };
+		D194F2B32A31226B005151E9 /* ListEntriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D194F2B22A31226B005151E9 /* ListEntriesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		D1198B5B2A303C51008D5E07 /* AppTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabScreen.swift; sourceTree = "<group>"; };
 		D1198B5D2A303FC8008D5E07 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
 		D1198B602A3042B5008D5E07 /* CreateEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEntryView.swift; sourceTree = "<group>"; };
+		D194F2B22A31226B005151E9 /* ListEntriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEntriesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +67,8 @@
 				D1198B422A303363008D5E07 /* Assets.xcassets */,
 				D1198B482A303363008D5E07 /* Info.plist */,
 				D1198B562A30392A008D5E07 /* Multiplatform */,
+				D194F2B02A3121F1005151E9 /* Data */,
 				D1198B452A303363008D5E07 /* Preview Content */,
-				D1198B502A303591008D5E07 /* JournalEntry.swift */,
 			);
 			path = "Simple Journal";
 			sourceTree = "<group>";
@@ -86,6 +88,7 @@
 				D1198B402A303362008D5E07 /* ContentView.swift */,
 				D1198B582A303BD1008D5E07 /* Navigation */,
 				D1198B5F2A304279008D5E07 /* CreateEntry */,
+				D194F2B12A312250005151E9 /* ListEntries */,
 			);
 			path = Multiplatform;
 			sourceTree = "<group>";
@@ -105,6 +108,22 @@
 				D1198B602A3042B5008D5E07 /* CreateEntryView.swift */,
 			);
 			path = CreateEntry;
+			sourceTree = "<group>";
+		};
+		D194F2B02A3121F1005151E9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D1198B502A303591008D5E07 /* JournalEntry.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D194F2B12A312250005151E9 /* ListEntries */ = {
+			isa = PBXGroup;
+			children = (
+				D194F2B22A31226B005151E9 /* ListEntriesView.swift */,
+			);
+			path = ListEntries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +200,7 @@
 				D1198B3D2A303362008D5E07 /* Simple_JournalApp.swift in Sources */,
 				D1198B512A303591008D5E07 /* JournalEntry.swift in Sources */,
 				D1198B5C2A303C51008D5E07 /* AppTabScreen.swift in Sources */,
+				D194F2B32A31226B005151E9 /* ListEntriesView.swift in Sources */,
 				D1198B412A303362008D5E07 /* ContentView.swift in Sources */,
 				D1198B612A3042B5008D5E07 /* CreateEntryView.swift in Sources */,
 			);
