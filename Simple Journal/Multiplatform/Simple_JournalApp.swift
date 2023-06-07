@@ -15,6 +15,5 @@ struct Simple_JournalApp: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(for: Item.self)
     }
 }

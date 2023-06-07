@@ -8,21 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		D1198B3D2A303362008D5E07 /* Simple_JournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1198B3C2A303362008D5E07 /* Simple_JournalApp.swift */; };
-		D1198B3F2A303362008D5E07 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1198B3E2A303362008D5E07 /* Item.swift */; };
 		D1198B412A303362008D5E07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1198B402A303362008D5E07 /* ContentView.swift */; };
 		D1198B432A303363008D5E07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1198B422A303363008D5E07 /* Assets.xcassets */; };
 		D1198B472A303363008D5E07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1198B462A303363008D5E07 /* Preview Assets.xcassets */; };
+		D1198B512A303591008D5E07 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1198B502A303591008D5E07 /* JournalEntry.swift */; };
+		D1198B5C2A303C51008D5E07 /* AppTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1198B5B2A303C51008D5E07 /* AppTabScreen.swift */; };
+		D1198B5E2A303FC8008D5E07 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1198B5D2A303FC8008D5E07 /* AppTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D1198B392A303362008D5E07 /* Simple Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Journal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1198B3C2A303362008D5E07 /* Simple_JournalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_JournalApp.swift; sourceTree = "<group>"; };
-		D1198B3E2A303362008D5E07 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		D1198B402A303362008D5E07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D1198B422A303363008D5E07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1198B442A303363008D5E07 /* Simple_Journal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Simple_Journal.entitlements; sourceTree = "<group>"; };
 		D1198B462A303363008D5E07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D1198B482A303363008D5E07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1198B502A303591008D5E07 /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		D1198B5B2A303C51008D5E07 /* AppTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabScreen.swift; sourceTree = "<group>"; };
+		D1198B5D2A303FC8008D5E07 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +59,12 @@
 		D1198B3B2A303362008D5E07 /* Simple Journal */ = {
 			isa = PBXGroup;
 			children = (
-				D1198B3C2A303362008D5E07 /* Simple_JournalApp.swift */,
-				D1198B3E2A303362008D5E07 /* Item.swift */,
-				D1198B402A303362008D5E07 /* ContentView.swift */,
-				D1198B422A303363008D5E07 /* Assets.xcassets */,
 				D1198B442A303363008D5E07 /* Simple_Journal.entitlements */,
+				D1198B422A303363008D5E07 /* Assets.xcassets */,
 				D1198B482A303363008D5E07 /* Info.plist */,
+				D1198B562A30392A008D5E07 /* Multiplatform */,
 				D1198B452A303363008D5E07 /* Preview Content */,
+				D1198B502A303591008D5E07 /* JournalEntry.swift */,
 			);
 			path = "Simple Journal";
 			sourceTree = "<group>";
@@ -72,6 +75,25 @@
 				D1198B462A303363008D5E07 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D1198B562A30392A008D5E07 /* Multiplatform */ = {
+			isa = PBXGroup;
+			children = (
+				D1198B3C2A303362008D5E07 /* Simple_JournalApp.swift */,
+				D1198B402A303362008D5E07 /* ContentView.swift */,
+				D1198B582A303BD1008D5E07 /* Navigation */,
+			);
+			path = Multiplatform;
+			sourceTree = "<group>";
+		};
+		D1198B582A303BD1008D5E07 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				D1198B5B2A303C51008D5E07 /* AppTabScreen.swift */,
+				D1198B5D2A303FC8008D5E07 /* AppTabView.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,8 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1198B3F2A303362008D5E07 /* Item.swift in Sources */,
+				D1198B5E2A303FC8008D5E07 /* AppTabView.swift in Sources */,
 				D1198B3D2A303362008D5E07 /* Simple_JournalApp.swift in Sources */,
+				D1198B512A303591008D5E07 /* JournalEntry.swift in Sources */,
+				D1198B5C2A303C51008D5E07 /* AppTabScreen.swift in Sources */,
 				D1198B412A303362008D5E07 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +305,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Simple Journal/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Simple Journal";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -300,9 +325,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
@@ -320,6 +347,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Simple Journal/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Simple Journal";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -339,9 +367,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
 		};
