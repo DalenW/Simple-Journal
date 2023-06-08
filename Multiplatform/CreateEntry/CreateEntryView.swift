@@ -12,7 +12,7 @@ struct CreateEntryView: View {
     @State private var entryText: String = "This is some editable text..."
     // @State private var text: String = ""
     
-    @Environment(\.modelContext) private var journalEntries
+    @Environment(\.modelContext) private var modelContext
     
     var body: some View {
         NavigationStack {
@@ -24,9 +24,14 @@ struct CreateEntryView: View {
                 Section {
                     Button(action: {
                         // Add Journal Entry
-                        journalEntries.insert(
-                            JournalEntry(content: entryText)
+                        let newEntry: JournalEntry = JournalEntry(
+                            content: entryText
                         )
+                        
+                        print("Creating new entry")
+                        print(newEntry.content)
+                        
+                        modelContext.insert(object: newEntry)
                     }, label: {
                         Text("Save")
                             .frame(

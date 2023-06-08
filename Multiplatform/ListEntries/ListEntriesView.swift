@@ -8,14 +8,17 @@
 import SwiftUI
 import SwiftData
 
+
 struct ListEntriesView: View {
-    @Query var allJournalEntries: [JournalEntry]
+    @Environment(\.modelContext) private var modelContext
+    
+    @Query private var journalEntries: [JournalEntry]
     
     var body: some View {
         NavigationStack {
             List {
-                ForEach(allJournalEntries) {
-                    entry in Text(entry.content)
+                ForEach(journalEntries) { entry in
+                    Text(entry.content)
                 }
             }
         }

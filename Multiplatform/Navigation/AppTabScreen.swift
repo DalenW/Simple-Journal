@@ -38,9 +38,9 @@ extension AppTabScreen {
     var destination: some View {
         switch self {
         case .home:
-            Label("Home", systemImage: "home")
+            HomeView()
         case .entries:
-             ListEntriesView().modelContainer(for: JournalEntry.self, inMemory: false)
+             ListEntriesView()
         case .create:
             CreateEntryView()
         case .content:

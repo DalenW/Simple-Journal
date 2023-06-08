@@ -15,6 +15,9 @@
 		D1198B5C2A303C51008D5E07 /* AppTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1198B5B2A303C51008D5E07 /* AppTabScreen.swift */; };
 		D1198B5E2A303FC8008D5E07 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1198B5D2A303FC8008D5E07 /* AppTabView.swift */; };
 		D1198B612A3042B5008D5E07 /* CreateEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1198B602A3042B5008D5E07 /* CreateEntryView.swift */; };
+		D15BDD212A318B2000D945E9 /* PreviewSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15BDD202A318B2000D945E9 /* PreviewSampleData.swift */; };
+		D15BDD252A3190A900D945E9 /* SampleEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15BDD242A3190A900D945E9 /* SampleEntries.swift */; };
+		D15BDD282A31963900D945E9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15BDD272A31963900D945E9 /* HomeView.swift */; };
 		D194F2B32A31226B005151E9 /* ListEntriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D194F2B22A31226B005151E9 /* ListEntriesView.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +33,9 @@
 		D1198B5B2A303C51008D5E07 /* AppTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabScreen.swift; sourceTree = "<group>"; };
 		D1198B5D2A303FC8008D5E07 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
 		D1198B602A3042B5008D5E07 /* CreateEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEntryView.swift; sourceTree = "<group>"; };
+		D15BDD202A318B2000D945E9 /* PreviewSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSampleData.swift; sourceTree = "<group>"; };
+		D15BDD242A3190A900D945E9 /* SampleEntries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleEntries.swift; sourceTree = "<group>"; };
+		D15BDD272A31963900D945E9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D194F2B22A31226B005151E9 /* ListEntriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListEntriesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,7 +53,13 @@
 		D1198B302A303362008D5E07 = {
 			isa = PBXGroup;
 			children = (
-				D1198B3B2A303362008D5E07 /* Simple Journal */,
+				D1198B442A303363008D5E07 /* Simple_Journal.entitlements */,
+				D1198B422A303363008D5E07 /* Assets.xcassets */,
+				D1198B482A303363008D5E07 /* Info.plist */,
+				D1198B562A30392A008D5E07 /* Multiplatform */,
+				D15BDD1F2A318AFD00D945E9 /* Sample Data */,
+				D194F2B02A3121F1005151E9 /* Models */,
+				D1198B452A303363008D5E07 /* Preview Content */,
 				D1198B3A2A303362008D5E07 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,19 +70,6 @@
 				D1198B392A303362008D5E07 /* Simple Journal.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D1198B3B2A303362008D5E07 /* Simple Journal */ = {
-			isa = PBXGroup;
-			children = (
-				D1198B442A303363008D5E07 /* Simple_Journal.entitlements */,
-				D1198B422A303363008D5E07 /* Assets.xcassets */,
-				D1198B482A303363008D5E07 /* Info.plist */,
-				D1198B562A30392A008D5E07 /* Multiplatform */,
-				D194F2B02A3121F1005151E9 /* Data */,
-				D1198B452A303363008D5E07 /* Preview Content */,
-			);
-			path = "Simple Journal";
 			sourceTree = "<group>";
 		};
 		D1198B452A303363008D5E07 /* Preview Content */ = {
@@ -89,6 +88,7 @@
 				D1198B582A303BD1008D5E07 /* Navigation */,
 				D1198B5F2A304279008D5E07 /* CreateEntry */,
 				D194F2B12A312250005151E9 /* ListEntries */,
+				D15BDD262A31962300D945E9 /* Home */,
 			);
 			path = Multiplatform;
 			sourceTree = "<group>";
@@ -110,12 +110,29 @@
 			path = CreateEntry;
 			sourceTree = "<group>";
 		};
-		D194F2B02A3121F1005151E9 /* Data */ = {
+		D15BDD1F2A318AFD00D945E9 /* Sample Data */ = {
+			isa = PBXGroup;
+			children = (
+				D15BDD202A318B2000D945E9 /* PreviewSampleData.swift */,
+				D15BDD242A3190A900D945E9 /* SampleEntries.swift */,
+			);
+			path = "Sample Data";
+			sourceTree = "<group>";
+		};
+		D15BDD262A31962300D945E9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D15BDD272A31963900D945E9 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D194F2B02A3121F1005151E9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				D1198B502A303591008D5E07 /* JournalEntry.swift */,
 			);
-			path = Data;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		D194F2B12A312250005151E9 /* ListEntries */ = {
@@ -196,12 +213,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D15BDD212A318B2000D945E9 /* PreviewSampleData.swift in Sources */,
 				D1198B5E2A303FC8008D5E07 /* AppTabView.swift in Sources */,
 				D1198B3D2A303362008D5E07 /* Simple_JournalApp.swift in Sources */,
+				D15BDD282A31963900D945E9 /* HomeView.swift in Sources */,
 				D1198B512A303591008D5E07 /* JournalEntry.swift in Sources */,
 				D1198B5C2A303C51008D5E07 /* AppTabScreen.swift in Sources */,
 				D194F2B32A31226B005151E9 /* ListEntriesView.swift in Sources */,
 				D1198B412A303362008D5E07 /* ContentView.swift in Sources */,
+				D15BDD252A3190A900D945E9 /* SampleEntries.swift in Sources */,
 				D1198B612A3042B5008D5E07 /* CreateEntryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,15 +348,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Simple Journal/Simple_Journal.entitlements";
+				CODE_SIGN_ENTITLEMENTS = Simple_Journal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Simple Journal/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
 				DEVELOPMENT_TEAM = 4RD9TU2V28;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Simple Journal/Info.plist";
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Simple Journal";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -370,15 +390,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Simple Journal/Simple_Journal.entitlements";
+				CODE_SIGN_ENTITLEMENTS = Simple_Journal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Simple Journal/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
 				DEVELOPMENT_TEAM = 4RD9TU2V28;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Simple Journal/Info.plist";
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Simple Journal";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;

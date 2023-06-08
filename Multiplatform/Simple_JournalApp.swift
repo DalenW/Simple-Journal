@@ -10,10 +10,15 @@ import SwiftData
 
 @main
 struct Simple_JournalApp: App {
+    
+    let dataConfiguration = ModelConfiguration(inMemory: true, readOnly: false)
 
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .modelContainer(
+                    for: JournalEntry.self
+                )
         }
     }
 }
