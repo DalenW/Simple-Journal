@@ -16,11 +16,15 @@ struct ListEntriesView: View {
     
     var body: some View {
         NavigationStack {
-            List {
-                ForEach(journalEntries) { entry in
-                    Text(entry.content)
+            Form {
+                Section {
+                    List {
+                        ForEach(journalEntries) { entry in
+                            EntryListItemView(entry: entry)
+                        }
+                    }
                 }
-            }
+            }.navigationTitle("Entries")
         }
     }
 }
